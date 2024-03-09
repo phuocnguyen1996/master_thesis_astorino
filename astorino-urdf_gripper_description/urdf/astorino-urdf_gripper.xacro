@@ -1,0 +1,302 @@
+<?xml version="1.0" ?>
+<robot name="astorino-urdf_gripper" xmlns:xacro="http://www.ros.org/wiki/xacro">
+
+<xacro:include filename="$(find astorino-urdf_gripper_description)/urdf/materials.xacro" />
+<xacro:include filename="$(find astorino-urdf_gripper_description)/urdf/astorino-urdf_gripper.trans" />
+<xacro:include filename="$(find astorino-urdf_gripper_description)/urdf/astorino-urdf_gripper.gazebo" />
+<link name="base_link">
+  <inertial>
+    <origin xyz="-0.03855013947880028 -0.00048078264657518165 0.03716908604146922" rpy="0 0 0"/>
+    <mass value="14.531191227416643"/>
+    <inertia ixx="0.026552" iyy="0.085153" izz="0.095377" ixy="-0.000806" iyz="-5e-05" ixz="-0.001358"/>
+  </inertial>
+  <visual>
+    <origin xyz="0 0 0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find astorino-urdf_gripper_description)/meshes/base_link.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="0 0 0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find astorino-urdf_gripper_description)/meshes/base_link.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="link1_1">
+  <inertial>
+    <origin xyz="0.015092534373678983 0.03413492024784877 0.03426653944052066" rpy="0 0 0"/>
+    <mass value="17.748403733169177"/>
+    <inertia ixx="0.08612" iyy="0.064693" izz="0.082969" ixy="-0.00617" iyz="-0.016244" ixz="-0.014077"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.0 0.0 -0.082" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find astorino-urdf_gripper_description)/meshes/link1_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="0.0 0.0 -0.082" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find astorino-urdf_gripper_description)/meshes/link1_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="link1_others_1">
+  <inertial>
+    <origin xyz="-0.044438514531046004 -0.01520910206334937 -0.0058800628023180646" rpy="0 0 0"/>
+    <mass value="1.5250166401638618"/>
+    <inertia ixx="0.003728" iyy="0.003798" izz="0.004002" ixy="-0.00121" iyz="-0.000407" ixz="-0.000243"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.0625 -0.113 -0.166" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find astorino-urdf_gripper_description)/meshes/link1_others_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.0625 -0.113 -0.166" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find astorino-urdf_gripper_description)/meshes/link1_others_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="link2_1">
+  <inertial>
+    <origin xyz="-0.00460986805347538 -0.025566016013792763 0.10733105443871979" rpy="0 0 0"/>
+    <mass value="4.6680956197836085"/>
+    <inertia ixx="0.027246" iyy="0.027345" izz="0.00318" ixy="-4.7e-05" iyz="-0.000506" ixz="0.000204"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.0625 -0.0085 -0.166" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find astorino-urdf_gripper_description)/meshes/link2_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.0625 -0.0085 -0.166" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find astorino-urdf_gripper_description)/meshes/link2_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="link3_1">
+  <inertial>
+    <origin xyz="-0.034683267323305116 0.030842980553162556 0.014601003077346686" rpy="0 0 0"/>
+    <mass value="8.80177438911179"/>
+    <inertia ixx="0.02744" iyy="0.020688" izz="0.033403" ixy="-0.008813" iyz="0.004419" ixz="0.003789"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.0625 -0.0085 -0.386" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find astorino-urdf_gripper_description)/meshes/link3_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.0625 -0.0085 -0.386" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find astorino-urdf_gripper_description)/meshes/link3_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="link3_others_1">
+  <inertial>
+    <origin xyz="-0.024482705119657618 -0.01093413143557427 -0.005385449603583947" rpy="0 0 0"/>
+    <mass value="0.8259326829646456"/>
+    <inertia ixx="0.00185" iyy="0.001311" izz="0.002624" ixy="-0.001068" iyz="-0.000208" ixz="-0.000182"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.0625 -0.113 -0.386" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find astorino-urdf_gripper_description)/meshes/link3_others_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.0625 -0.113 -0.386" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find astorino-urdf_gripper_description)/meshes/link3_others_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="link4_1">
+  <inertial>
+    <origin xyz="0.0016382798114516434 -0.0003709058243818158 0.10420153609282662" rpy="0 0 0"/>
+    <mass value="5.425024956478684"/>
+    <inertia ixx="0.027191" iyy="0.026626" izz="0.006091" ixy="-2.8e-05" iyz="-0.000116" ixz="0.000274"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.0035 -0.0 -0.456" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find astorino-urdf_gripper_description)/meshes/link4_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="0.0035 -0.0 -0.456" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find astorino-urdf_gripper_description)/meshes/link4_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="link5_1">
+  <inertial>
+    <origin xyz="-0.00010936530055836698 0.031241907302688977 0.006956741526719767" rpy="0 0 0"/>
+    <mass value="0.2827540533408328"/>
+    <inertia ixx="0.0001" iyy="0.00011" izz="0.000105" ixy="-1e-06" iyz="-7e-06" ixz="-0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.0035 0.031 -0.677" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find astorino-urdf_gripper_description)/meshes/link5_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="0.0035 0.031 -0.677" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find astorino-urdf_gripper_description)/meshes/link5_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="link6_1">
+  <inertial>
+    <origin xyz="4.516445913807336e-05 -1.870777503897969e-05 -0.0030991217417366546" rpy="0 0 0"/>
+    <mass value="0.08207079380299812"/>
+    <inertia ixx="2.2e-05" iyy="2.2e-05" izz="1.4e-05" ixy="-0.0" iyz="0.0" ixz="-0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.0035 0.0 -0.70864" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find astorino-urdf_gripper_description)/meshes/link6_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="0.0035 0.0 -0.70864" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find astorino-urdf_gripper_description)/meshes/link6_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="simple_gripper_v2_1">
+  <inertial>
+    <origin xyz="4.562322741819003e-15 -1.350499490922586e-15 0.06707471292556177" rpy="0 0 0"/>
+    <mass value="0.8575766121982903"/>
+    <inertia ixx="0.002244" iyy="0.001539" izz="0.000788" ixy="-0.0" iyz="-0.0" ixz="-0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.0035 0.0 -0.71714" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find astorino-urdf_gripper_description)/meshes/simple_gripper_v2_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="0.0035 0.0 -0.71714" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find astorino-urdf_gripper_description)/meshes/simple_gripper_v2_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+<!-- <link name="tcp">
+</link>
+<joint name="tcp_joint" type = "fixed">
+  <origin xyz="0.0 0.0 0.147" rpy="0 0 0"/>
+  <parent link="simeple_gripper_v2_1"/>
+  <child link="tcp"/>
+  <axis xyz="0 0 0"/>
+</joint> -->
+<link name="tcp"/>
+<joint name="tcp_joint" type="fixed">
+	<origin rpy="0 0 0" xyz="0 0 0.147" />
+	<parent link="simple_gripper_v2_1" />
+	<child link="tcp" />
+	<axis xyz="0 0 0" />
+</joint>
+
+<!-- <joint name="fix1" type="fixed">
+  <origin xyz="0.0625 0.113 0.084" rpy="0 0 0"/>
+  <parent link="link1_1"/>
+  <child link="link1_others_1"/>
+</joint> -->
+
+<joint name="joint1" type="revolute">
+  <origin xyz="0.0 0.0 0.082" rpy="0 0 0"/>
+  <parent link="base_link"/>
+  <child link="link1_1"/>
+  <axis xyz="0.0 0.0 1.0"/>
+  <limit upper="2.75762" lower="-2.75762" effort="100" velocity="100"/>
+</joint>
+
+<joint name="fix1" type="fixed">
+  <origin xyz="0.0625 0.113 0.084" rpy="0 0 0"/>
+  <parent link="link1_1"/>
+  <child link="link1_others_1"/>
+</joint>
+
+<joint name="joint2" type="revolute">
+  <origin xyz="0.0625 0.0085 0.084" rpy="0 0 0"/>
+  <parent link="link1_1"/>
+  <child link="link2_1"/>
+  <axis xyz="-0.0 1.0 -0.0"/>
+  <limit upper="2.216568" lower="-1.570796" effort="100" velocity="100"/>
+</joint>
+
+<joint name="joint3" type="revolute">
+  <origin xyz="0.0 0.0 0.22" rpy="0 0 0"/>
+  <parent link="link2_1"/>
+  <child link="link3_1"/>
+  <axis xyz="-0.0 1.0 0.0"/>
+  <limit upper="2.932153" lower="0.0" effort="100" velocity="100"/>
+</joint>
+
+<joint name="fix3" type="fixed">
+  <origin xyz="0.0 0.1045 0.0" rpy="0 0 0"/>
+  <parent link="link3_1"/>
+  <child link="link3_others_1"/>
+</joint>
+
+<joint name="joint4" type="continuous">
+  <origin xyz="-0.066 -0.0085 0.07" rpy="0 0 0"/>
+  <parent link="link3_1"/>
+  <child link="link4_1"/>
+  <axis xyz="-0.0 0.0 1.0"/>
+</joint>
+
+<joint name="joint5" type="revolute">
+  <origin xyz="0.0 -0.031 0.221" rpy="0 0 0"/>
+  <parent link="link4_1"/>
+  <child link="link5_1"/>
+  <axis xyz="0.0 1.0 -0.0"/>
+  <limit upper="2.094395" lower="-2.094395" effort="100" velocity="100"/>
+</joint>
+
+<joint name="joint6" type="continuous">
+  <origin xyz="0.0 0.031 0.03164" rpy="0 0 0"/>
+  <parent link="link5_1"/>
+  <child link="link6_1"/>
+  <axis xyz="-0.0 0.0 1.0"/>
+</joint>
+
+<joint name="Rigid 20" type="fixed">
+  <origin xyz="0.0 0.0 0.0085" rpy="0 0 0"/>
+  <parent link="link6_1"/>
+  <child link="simple_gripper_v2_1"/>
+</joint>
+
+</robot>

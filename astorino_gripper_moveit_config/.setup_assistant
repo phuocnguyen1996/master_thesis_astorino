@@ -1,0 +1,25 @@
+moveit_setup_assistant_config:
+  urdf:
+    package: astorino-urdf_gripper_description
+    relative_path: urdf/astorino-urdf_gripper.xacro
+  srdf:
+    relative_path: config/astorino-urdf_gripper.srdf
+  package_settings:
+    author_name: nguyen
+    author_email: nguyen.nguyen@rwth-aachen.de
+    generated_timestamp: 1687952892
+  control_xacro:
+    command:
+      - position
+    state:
+      - position
+      - velocity
+  modified_urdf:
+    xacros:
+      - control_xacro
+  control_xacro:
+    command:
+      - position
+    state:
+      - position
+      - velocity
