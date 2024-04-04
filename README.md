@@ -18,6 +18,7 @@ All the packages are written in ROS2 Humble
 * [Teensy Code](#teensy-code)
 <!-- * [Bag Files](#bag-file) -->
 * [Usage](#usage)
+* [Video Demonstration](#video-demonstration)
 <hr>
 
 ## **Requirements**
@@ -207,6 +208,10 @@ Run and launch the below lines in the corresponding order if having a RealSense 
 * `ros2 run astorino_planning execute_multiple` for performing motion planning for multiple-object pick-and-place tasks
 </details>
 <hr>
+
+## **Video Demonstration**
+https://www.youtube.com/watch?v=lln2r2S5FSc
+[![Video Demonstration](https://img.youtube.com/vi/lln2r2S5FSc/0.jpg)](https://www.youtube.com/watch?v=lln2r2S5FSc)
 
 <!-- Run and launch the below lines in the corresponding order if using the recorded bag file, which include the camera's signal (for testing the algorithms or simulation):
 <details>
