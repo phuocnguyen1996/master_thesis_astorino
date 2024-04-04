@@ -210,7 +210,7 @@ Run and launch the below lines in the corresponding order if having a RealSense 
 <hr>
 
 ## **Video Demonstration**
-https://www.youtube.com/watch?v=lln2r2S5FSc
+<!-- https://www.youtube.com/watch?v=lln2r2S5FSc -->
 [![Video Demonstration](https://img.youtube.com/vi/lln2r2S5FSc/0.jpg)](https://www.youtube.com/watch?v=lln2r2S5FSc)
 
 <!-- Run and launch the below lines in the corresponding order if using the recorded bag file, which include the camera's signal (for testing the algorithms or simulation):
